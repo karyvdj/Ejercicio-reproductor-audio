@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Reproductor de audio</title>
+    <link rel="shortcut icon" type="image/x-icon" href="img/audio.ico">
+    <style>
+    section{
+      margin-top: 100px;
+      margin-left: 35%;
+      margin-right: 35%;
+      background: #D7F7FF;
+      width: 600px;
+      height: 200px;
+      border-radius: 20px;
+      align-content: center;
+    }
+    button{
+      border:0px;
+      background:rgba(200,200,200,0);
+    }
+    img{
+      height:60px;
+      width:60px;
+    }
+    </style>
+  </head>
+  <body>
+    <section>
+      <h1 style="color:#4DBCFF ; font-family:Helvetica">Café Tacvba - FVTURO</h1>
+      <audio id="cancioncita">
+        <source src="audio/Café Tacvba - FVTURO.mp3" type="audio/mpeg">
+      </audio>
+      <input type="range" id="duracion"/>
+      <br>
+      <button  name="play" id="play" onclick="playAudio()"><img src="img/1432343177-800px.png"/></button>
+      <button  name="pause" id="pause" onclick="pauseAudio()"><img src="img/Graphicloads-100-Flat-Pause.ico"/></button>
+      <button  name="stop" id="stop" onclick="stopAudio()"><img src="img/Graphicloads-100-Flat-Stop-2 (1).ico"/></button>
+      <button  name="menos" id="menos" onclick="menosVolumen()">♫ Vol - ♫</button>
+      <button  name="mas" id="mas" onclick="masVolumen()">♫ Vol + ♫</button>
+      <button  name="atras" id="atras" onclick="atrasAudio()">BACK</button>
+      <button  name="adelante" id="adelante" onclick="adelanteAudio()">ADVANCE</button>
+    </section>
+    <script src="reproducir.js"></script>
+  </body>
+</html>
