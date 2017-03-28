@@ -13,33 +13,47 @@
       width: 600px;
       height: 200px;
       border-radius: 20px;
-      align-content: center;
+      text-align: center;
+    }
+    #duracion{
+      margin: 15px;
     }
     button{
       border:0px;
       background:rgba(200,200,200,0);
+      margin: 4px;
     }
     img{
       height:60px;
       width:60px;
     }
+    h1{
+      color: #4DBCFF;
+      font-family:Helvetica;
+    }
+    input[type="range"]::-webkit-slider-runnable-track{
+      height: 10px;
+      cursor: pointer;
+      background: #1072e1;
+      border-radius: 15px;
+    }
     </style>
   </head>
   <body>
     <section>
-      <h1 style="color:#4DBCFF ; font-family:Helvetica">Café Tacvba - FVTURO</h1>
+      <h1>Café Tacvba - FVTURO</h1>
       <audio id="cancioncita">
         <source src="audio/Café Tacvba - FVTURO.mp3" type="audio/mpeg">
       </audio>
       <input type="range" id="duracion"/>
       <br>
-      <button  name="play" id="play" onclick="playAudio()"><img src="img/1432343177-800px.png"/></button>
-      <button  name="pause" id="pause" onclick="pauseAudio()"><img src="img/Graphicloads-100-Flat-Pause.ico"/></button>
-      <button  name="stop" id="stop" onclick="stopAudio()"><img src="img/Graphicloads-100-Flat-Stop-2 (1).ico"/></button>
-      <button  name="menos" id="menos" onclick="menosVolumen()">♫ Vol - ♫</button>
-      <button  name="mas" id="mas" onclick="masVolumen()">♫ Vol + ♫</button>
-      <button  name="atras" id="atras" onclick="atrasAudio()">BACK</button>
-      <button  name="adelante" id="adelante" onclick="adelanteAudio()">ADVANCE</button>
+      <button  name="play" id="play" onclick="playAudio()"><img src="img/play.png"/></button>
+      <button  name="atras" id="atras" onclick="atrasAudio()"><img src="img/atras.png"/></button>
+      <button  name="pause" id="pause" onclick="pauseAudio()"><img src="img/pause.ico"/></button>
+      <button  name="adelante" id="adelante" onclick="adelanteAudio()"><img src="img/adelante.png"/></button>
+      <button  name="stop" id="stop" onclick="stopAudio()"><img src="img/stop.ico"/></button>
+      <button  name="menos" id="menos" onclick="menosVolumen()"><img src="img/menos.png"/></button>
+      <button  name="mas" id="mas" onclick="masVolumen()"><img src="img/mas.png"/></button>
     </section>
     <script src="reproducir.js"></script>
   </body>

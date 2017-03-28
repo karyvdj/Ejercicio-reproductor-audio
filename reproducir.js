@@ -21,9 +21,14 @@ function masVolumen() {
 }
 
 function atrasAudio(){
-  miCancion.currentTime -= 1;
+  miCancion.currentTime -= 2;
 }
 
 function adelanteAudio(){
-  miCancion.currentTime += 1;
+  miCancion.currentTime += 2;
+}
+
+miCancion.ontimeupdate = function(){
+    var duracion = document.getElementById('duracion');
+    duracion.value = miCancion.currentTime;
 }
