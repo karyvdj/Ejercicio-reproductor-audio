@@ -1,0 +1,32 @@
+section{
+  margin-top: 100px;
+  margin-left: 35%;
+  margin-right: 35%;
+  background: #D7F7FF;
+  width: 600px;
+  height: 200px;
+  border-radius: 20px;
+  text-align: center;
+}
+#duracion{
+  margin: 15px;
+}
+button{
+  border:0px;
+  background:rgba(200,200,200,0);
+  margin: 4px;
+}
+img{
+  height:60px;
+  width:60px;
+}
+h1{
+  color: #4DBCFF;
+  font-family:Helvetica;
+}
+input[type="range"]::-webkit-slider-runnable-track{
+  height: 10px;
+  cursor: pointer;
+  background: #1072e1;
+  border-radius: 15px;
+}
